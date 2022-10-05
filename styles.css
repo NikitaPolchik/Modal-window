@@ -21,6 +21,7 @@
 }
 
 .second-page {
+  font-size: 50px;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -61,6 +62,7 @@
   flex-direction: column;
   background-color: aliceblue;
   position: relative;
+  visibility: hidden;
 }
 
 .modal-btn {

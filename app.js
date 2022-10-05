@@ -1,11 +1,17 @@
-const modalBtn = document.querySelector(".modal-btn");
+const secondPageBtn = document.querySelector(".modal-btn");
 const modalClose = document.querySelector(".modal-close");
 const modalWindow = document.querySelector(".modal-window");
+const modalContent = document.querySelector(".modal-content");
 
-modalBtn.addEventListener("click", modalAppear);
-modalWindow.addEventListener("click", modalDisappear);
+secondPageBtn.addEventListener("click", modalAppear);
+modalClose.addEventListener("click", modalDisappear);
+
 function modalAppear() {
+  modalContent.classList.add("modal-appear");
   modalWindow.classList.add("modal-appear");
 }
 
-function modalDisappear() {}
+function modalDisappear() {
+  modalContent.classList.remove("modal-appear");
+  modalWindow.classList.remove("modal-appear");
+}
